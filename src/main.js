@@ -9,6 +9,7 @@ import { Swiper as SwiperClass, Pagination, Navigation, Mousewheel, Autoplay } f
 import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
 
 import './assets/stylus/main.styl'
+import './assets/libs/libs.min.css'
 import 'swiper/swiper-bundle.min.css'
 
 import Constants from './data/common-data'
