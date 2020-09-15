@@ -8,6 +8,7 @@ import VueYouTubeEmbed from 'vue-youtube-embed'
 import { Swiper as SwiperClass, Pagination, Navigation, Mousewheel, Autoplay } from 'swiper/swiper.esm'
 import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter'
 
+import './assets/libs/libs.min.css'
 import './assets/stylus/main.styl'
 import 'swiper/swiper-bundle.min.css'
 
