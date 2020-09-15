@@ -1,3 +1,5 @@
-publicPath: process.env.NODE_ENV === 'production'
-? '/oknacheb/'
-: '/'
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/oknacheb/'
+    : '/'
+}
