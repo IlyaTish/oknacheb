@@ -1,0 +1,32 @@
+.about
+  &__cont
+    display flex
+    align-items flex-start
+
+  &__title
+    margin 0 0 14px
+    color #009DEA
+    font-size 19px
+    font-weight 400
+    text-decoration underline
+
+  &__p
+    color #000000
+    font-size 13px
+    margin 0 0 14px
+
+    &:last-of-type
+      margin 0
+
+  &__img
+    width 100%
+    max-width 245px
+    margin 0 0 0 40px
+
+
+  @media (max-width 900px)
+    &__img
+      max-width 300px
+
+  @media (max-width 767px)
+    display none

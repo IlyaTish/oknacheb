@@ -1,0 +1,9 @@
+.banner
+  cursor pointer
+
+  &__img
+    width 100%
+
+
+  @media (max-width: 767px)
+    margin 10px 0 0

@@ -1,0 +1,153 @@
+.calculator
+  margin 20px 0 0
+
+  &__cont
+    display flex
+
+  &__col-1
+    width 100%
+    margin 0 10px 0 0
+
+  &__col-2
+    width 100%
+    max-width 320px
+
+  .swiper-container
+    margin 0 !important
+
+  .swiper-slide
+    width auto !important
+
+.calculator-options
+  height 100%
+  padding 20px
+  border-top 5px solid #DEDEDE
+  background linear-gradient(0deg, #ECECEC, #F9F9F9 46%, #FFFFFF)
+  box-sizing border-box
+
+  &__title
+    display inline-block
+    margin 0 0 20px
+    color #009DEA
+    font-size 22px
+
+  &__subtitle
+    min-width 110px
+    font-size 16px
+    font-weight 400
+    text-align center
+
+  &__row
+    margin 20px 0 0
+    display flex
+    align-items center
+
+    &:first-of-type
+      margin 0
+
+  &__cont
+    display flex
+
+  &__img
+    height 65px
+    border-radius 3px
+    border 4px solid transparent
+    transition .2s
+    cursor pointer
+
+    &:hover
+      border 4px solid #009DEA
+
+.calculator-form
+  height 100%
+  padding 14px 20px
+  box-sizing border-box
+  border-top 5px solid #DEDEDE
+  background linear-gradient(0deg, #ECECEC, #F9F9F9 46%, #FFFFFF)
+
+  &__input
+    height 32px
+
+  .btn
+    width 100%
+    margin 6px 0 0
+
+  .calculator-default
+    margin 15px 0 0
+    padding 15px 0
+    border-top 1.3px dotted #898989
+    border-bottom 1.3px dotted #898989
+
+    &__row
+      display flex
+
+    &__col-1
+      width 100%
+      margin 0 10px 0 0
+
+    &__col-2
+      width 100%
+
+    &__txt
+      display flex
+      color #999999
+      font-size 13px
+      line-height 22px
+
+      &--title
+        display block
+        margin 0 0 37px
+        color #000000
+        line-height 16px
+
+    &__img
+      height 110px
+      margin 5px 0 0
+
+    &__edit
+      width 100%
+      display block
+      margin 15px 0 0
+      color #009DEA
+      font-size 14px
+      text-align center
+
+
+@media (max-width 991px)
+  .calculator
+    &__col-1
+      margin 0
+
+    &__col-2
+      display none
+
+  .calculator-options
+    &__img
+      height 74px
+
+
+@media (max-width 767px)
+  .calculator
+    margin 10px 0 0
+
+  .calculator-options
+    padding 14px 10px
+
+    &__title
+      margin 0 0 14px
+      font-size 18px
+
+    &__subtitle
+      min-width 90px
+      font-size 14px
+
+
+@media (max-width 479px)
+  .calculator-options
+    &__row
+      flex-direction column
+
+    &__subtitle
+      margin 0 0 6px
+      min-width 100%
+      text-align center

@@ -1,0 +1,66 @@
+.guarantee
+  display flex
+  margin 30px 0 0
+
+  &__col-1,
+  &__col-2
+    width 100%
+    display flex
+    overflow hidden
+
+  &__col-1
+    padding 0 0 0 15px
+    margin 0 10px 0 0
+    background url('../../../../assets/images/guarantee/bg.svg') no-repeat
+    background-position 50%
+    background-size 100%
+
+    .guarantee__img-cont
+      width 120px
+      flex 120px 0 0
+      padding 10px 0 0
+
+    .guarantee__txt-cont
+      padding 20px 20px 0 30px
+      box-sizing border-box
+
+    .guarantee__title
+      margin 0 0 10px
+      color #333333
+      font-size 17px
+      text-transform uppercase
+
+    .guarantee__p
+      margin 0
+      color #00A0E3
+      font-size 12px
+      font-weight 600
+
+  &__col-2
+    padding 20px
+    border-top 5px solid #DEDEDE
+    background linear-gradient(0deg, #ECECEC, #F9F9F9 80%, #FFFFFF)
+
+    .guarantee__img-cont
+      display flex
+
+    .guarantee__img
+      width 70px
+      margin 0 14px 0 0
+
+      &:last-of-type
+        margin 0
+
+    .guarantee__title
+      margin 0 0 10px
+      color #009DEA
+      font-size 16px
+      font-weight 100
+
+    .guarantee__p
+      margin 0
+      color #727271
+      font-size 12px
+
+  @media (max-width 991px)
+    display none

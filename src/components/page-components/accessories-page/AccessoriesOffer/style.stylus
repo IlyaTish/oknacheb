@@ -1,0 +1,26 @@
+.accessories-offer
+  padding 20px
+  margin 0 0 20px
+  background: linear-gradient(180deg, #FCFCFC 56%, #FCFCFC 0, #DFDFDF 100%)
+
+  &__title
+    margin 0 0 6px
+    color #898989
+    font-size 24px
+    font-weight 400
+
+  &__subtitle
+    display block
+    margin: 0 0 10px
+    color #434242
+    font-size 13px
+
+  &__p
+    color #898989
+    font-size 13px
+    line-height 18px
+
+  &__img
+    max-width 265px
+    margin 0 20px 10px 0
+    float left

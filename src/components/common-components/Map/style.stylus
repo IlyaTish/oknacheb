@@ -1,0 +1,95 @@
+.map
+  margin 20px 0 0
+
+  &__cont
+    position relative
+
+.ya-karto
+  width 100%
+  height 460px
+
+.ymap-container
+  width 100%
+  height 100%
+
+.map-form
+  width 600px
+  height 170px
+  padding 0 20px 20px
+  left 48px
+  bottom 44px
+  position absolute
+  background rgba(0,0,0,.44)
+  box-sizing border-box
+
+  &__cont
+    height 100%
+    display flex
+    align-items center
+    justify-content space-between
+
+  &__form
+    max-width 210px
+    flex 210px 0 0
+
+  &__title
+    width 100%
+    margin 0 0 6px
+    color #FFFFFF
+    font-size 24px
+    font-weight 600
+    text-align center
+    text-shadow -1px 2px 2px #00000094
+
+  .input
+    max-width 180px
+    margin 0 auto 4px
+    display block
+
+  .btn
+    width 100%
+    padding 7px 10px
+
+.map-phone
+  display flex
+  align-items center
+
+  &__icon-cont
+    width 70px
+    height 70px
+    display flex
+    align-items center
+    justify-content center
+    border-radius 10px
+    background #F8D500
+
+  &__txt-cont
+    padding 5px
+    background rgba(0,0,0,.4);
+
+  &__title
+    margin 0 0 4px
+    color #FFFFFF
+    font-size 17px
+    font-weight 400
+
+  &__subtitle
+    display inline-block
+    color #FFFFFF
+    font-size 12px
+
+
+@media (max-width 1201px)
+  .map-form
+    display none
+
+  .ya-karto
+    height 340px
+
+@media (max-width 769px)
+  .ya-karto
+    height 300px
+
+@media (max-width 481px)
+  .ya-karto
+    height 220px

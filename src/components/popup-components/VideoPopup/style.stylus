@@ -1,0 +1,16 @@
+.video-popup
+  .popup__cont
+    width: 100%
+    max-width: 980px
+    min-height: 560px
+    margin: auto
+    padding: 10px
+    position: relative
+    background-color: #FFFFFF
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33)
+    box-sizing: border-box
+    transition: ease .3s
+    z-index: 4
+      
+  .popup-bg
+    background-color: rgba(0, 0, 0, .8)

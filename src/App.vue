@@ -22,13 +22,13 @@
 <script>
   import Mixins from '@/assets/scripts/mixins'
 
-  import BlockHeader   from '@/components/common/block-header'
-  import BlockCheckout from '@/components/common/block-checkout'
-  import BlockMap      from '@/components/common/block-map'
-  import BlockFooter   from '@/components/common/block-footer'
+  import BlockHeader   from '@/components/common-components/Header/component'
+  import BlockCheckout from '@/components/common-components/Checkout/component'
+  import BlockMap      from '@/components/common-components/Map/component'
+  import BlockFooter   from '@/components/common-components/Footer/component'
 
-  import CommonPopup from '@/components/popups/common-popup'
-  import WritePopup  from '@/components/popups/write-popup'
+  import CommonPopup from '@/components/popup-components/CommonPopup/component'
+  import WritePopup  from '@/components/popup-components/WritePopup/component'
 
   export default {
     name: 'App',

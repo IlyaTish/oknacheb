@@ -1,0 +1,47 @@
+.balkony-heading
+  &__cont
+    margin 20px 0
+    padding 0 20px
+
+  &__title
+    margin 0 0 6px
+    color #2B2A29
+    font-size 20px
+    font-weight 600
+
+  &__subtitle
+    margin 0 0 14px
+    color #707070
+    font-size 20px
+    font-weight 400
+
+  &__p-main
+    margin 0 0 20px
+    color #000000
+    font-size 13px
+
+  &__p
+    margin 0
+    color #000000
+    font-size 13px
+
+  &__img-main
+    cursor pointer
+
+  &__img
+    width 200px
+    margin 0 10px 0 0
+    float left
+
+
+@media (max-width 769px)
+  .balkony-heading
+    &__cont
+      padding 0
+
+@media (max-width 481px)
+  .balkony-heading
+    &__img
+      width 100%
+      margin 0 0 10px
+      float none

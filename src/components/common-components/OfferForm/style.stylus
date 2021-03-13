@@ -1,0 +1,95 @@
+.offer-form
+  margin 42px 0 50px
+  display grid
+  grid-template-columns 1fr 2fr
+
+  &__cont
+    display flex
+
+  &__form
+    width 100%
+    text-align center
+
+  &__title
+    display inline-block
+    margin 0 0 10px
+    color #000000
+    font-size 16px
+    font-weight 400
+    text-transform uppercase
+
+  &__subtitle
+    font-size 13px
+    font-weight 600
+
+  &__p
+    width 100%
+    max-width 160px
+    margin 44px 10px 0
+    font-size 11px
+    line-height 13px
+
+  .input
+    margin 0 0 10px
+
+    &:last-of-type
+      margin 0
+
+  .btn
+    margin 20px auto 0
+    padding 7px 20px
+    font-size 12px
+
+  .flipclock-wrapper
+    text-align center
+
+    .offer-form__subtitle
+      display inline-block
+      margin 0 0 10px
+
+  .flip-clock__piece
+    position relative
+
+    &:before
+      content ''
+      display inline-block
+      top 3px
+      right -8px
+      position absolute
+      color #000000
+      font-size 24px
+
+    &:last-of-type
+      &:before
+        display none
+
+
+@media (max-width 767px)
+  .offer-form
+    grid-template-columns 1fr
+
+    &__form
+      max-width 400px
+      margin 0 auto
+
+    .flipclock-wrapper
+      display none
+
+    &__title
+      width 100%
+
+      br
+        display none
+
+    &__p
+      display none
+
+    .input
+      margin 0 0 6px
+
+    .btn
+      width 100%
+      max-width 300px
+      margin 12px auto 0
+      padding 11px 20px
+      background linear-gradient(0deg ,#f8a200, #ffd710)

@@ -1,0 +1,31 @@
+.thanks
+  margin 40px 0
+
+  &__title
+    margin 0 0 6px
+    color #009DEA
+    font-size 32px
+
+  &__subtitle
+    display inline-block
+    margin 0 0 6px
+    color #5B5B5B
+    font-size 17px
+
+  &__p
+    margin 10px 0
+    color #000000
+    font-size 13px
+
+  &__p.bold
+    font-weight 600
+
+
+  @media (max-width 767px)
+    margin 30px 0
+
+    &__title
+      font-size 28px
+
+    &__subtitle
+      font-size 16px

@@ -1,0 +1,119 @@
+.popup.calculator-popup
+  .popup__cont
+    max-width 680px
+    padding 0 0 30px
+
+  .popup__title
+    margin 0 0 16px
+    color #009DEA
+    font-size 16px
+    font-weight 600
+    letter-spacing 1px
+
+    &--last
+      margin 0 0 24px
+
+  .popup__subtitle
+    width 100%
+    display inline-block
+    margin 0 0 20px
+    color #818181
+    font-size 16px
+    font-weight 400
+    text-align center
+
+  .input-wrapper
+    max-width none
+    display flex
+    margin 0 auto 10px
+
+  .input-title
+    width auto
+    min-width 70px
+    margin 0 10px 0 0
+    color #858585
+    font-size 13px
+    font-weight 400
+    line-height 30px
+
+  .input
+    padding 5px 6px
+    font-size 14px
+
+  .swiper-container
+    margin 0 40px
+    position unset !important
+
+  .swiper-pagination
+    top -40px
+
+  .swiper-slide
+    width auto !important
+
+  .swiper-button-prev,
+  .swiper-button-next
+    top calc(50% + 20px)
+
+  .swiper-button-disabled
+    opacity 0
+
+  .btn
+    margin 20px auto 0
+
+.calculator-popup
+  &__conf-cont
+    max-width 100%
+    padding 40px 0 24px
+    border-bottom 1px solid #EEEEEE
+    overflow hidden
+    position relative
+
+  &__conf-wrapper
+    position relative
+
+  &__options-cont
+    margin 24px 0 0
+
+  &__cont
+    padding 0 40px
+    display flex
+
+  &__col-1,
+  &__col-2
+    width 100%
+
+  &__col-1
+    margin 0 40px 0 0
+
+  &__conf-img
+    width auto
+    height 110px
+    margin 0 6px 0 0
+    border 5px solid transparent
+    border-radius 4px
+    box-sizing border-box
+    cursor pointer
+    transition .2s
+
+    &:hover
+      border 5px solid lighten(#009DEA, 80%)
+
+    &:last-of-type
+      margin 0
+
+  &__conf-img.active
+    border 5px solid #009DEA
+
+  &__img-cont
+    height 238px
+    display flex
+    align-items center
+    justify-content center
+
+  &__img
+    width auto
+    height 150px
+    margin 0 auto
+
+  &__send
+    margin 40px 0 0
