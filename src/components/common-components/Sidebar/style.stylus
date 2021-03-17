@@ -88,6 +88,9 @@
     font-size 19px
     font-weight 400
 
+  &__img
+    min-height 98px
+
   &__p
     margin 20px 0 0
     padding 0 20px 20px 0
@@ -101,6 +104,7 @@
 
   &__img
     width 100%
+    min-height 180px
 
 .sidebar-articles
   margin 20px 0 0
@@ -183,8 +187,9 @@
 
   &__img
     margin 20px 0
+    min-height 132px
 
 
-@media (max-width 991px)
+@media (max-width 993px)
   .sidebar
     display none

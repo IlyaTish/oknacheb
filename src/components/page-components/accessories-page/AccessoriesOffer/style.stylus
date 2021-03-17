@@ -16,6 +16,7 @@
     font-size 13px
 
   &__p
+    margin 10px 0 0
     color #898989
     font-size 13px
     line-height 18px
@@ -24,3 +25,11 @@
     max-width 265px
     margin 0 20px 10px 0
     float left
+
+
+@media (max-width: 480px)
+  .accessories-offer
+    padding: 10px
+
+    &__img
+      max-width 100%

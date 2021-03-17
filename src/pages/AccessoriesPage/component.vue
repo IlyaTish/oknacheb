@@ -7,6 +7,7 @@
 
       .main-content__col
         .offer-wrapper
+          block-accessories-heading
           block-accessories-offer(
             v-for='offer in offers'
             :offer='offer'
@@ -18,9 +19,10 @@
   import SidebarOffers from '@/data/balkony-page/data'
   import Offers        from '@/data/accessories-page/data'
 
-  import BlockMain             from '@/components/common-components/Main/component'
-  import BlockSidebar          from '@/components/common-components/Sidebar/component'
-  import BlockAccessoriesOffer from '@/components/page-components/accessories-page/AccessoriesOffer/component'
+  import BlockMain               from '@/components/common-components/Main/component'
+  import BlockSidebar            from '@/components/common-components/Sidebar/component'
+  import BlockAccessoriesHeading from '@/components/page-components/accessories-page/AccessoriesHeading/component'
+  import BlockAccessoriesOffer   from '@/components/page-components/accessories-page/AccessoriesOffer/component'
 
   export default {
     props: {
@@ -29,6 +31,7 @@
     components: {
       BlockMain,
       BlockSidebar,
+      BlockAccessoriesHeading,
       BlockAccessoriesOffer
     },
     data() {

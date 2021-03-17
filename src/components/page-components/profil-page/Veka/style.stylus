@@ -1,0 +1,6 @@
+.veka-row-1
+  width 100%
+  height 500px
+  position relative
+  background url('@/assets/images/veka-pic-01.png') no-repeat
+  background-size: cover

@@ -4,15 +4,40 @@
     .gallery__cont
       swiper.gallery-swiper.swiper(:options='swiperOptions')
         swiper-slide
-          img.gallery__img(src='@/assets/images/gallery-sm/pic-01.jpg', alt='Окна установленные компанией ЛЕГОС')
+          img.gallery__img.swiper-lazy(
+            :data-src='require("@/assets/images/gallery-sm/pic-01.jpg")',
+            alt='Окна установленные компанией ЛЕГОС'
+          )
+          .swiper-lazy-preloader
+
         swiper-slide
-          img.gallery__img(src='@/assets/images/gallery-sm/pic-02.jpg', alt='Окна установленные компанией ЛЕГОС')
+          img.gallery__img.swiper-lazy(
+            :data-src='require("@/assets/images/gallery-sm/pic-02.jpg")',
+            alt='Окна установленные компанией ЛЕГОС'
+          )
+          .swiper-lazy-preloader
+
         swiper-slide
-          img.gallery__img(src='@/assets/images/gallery-sm/pic-03.jpg', alt='Окна установленные компанией ЛЕГОС')
+          img.gallery__img.swiper-lazy(
+            :data-src='require("@/assets/images/gallery-sm/pic-03.jpg")',
+            alt='Окна установленные компанией ЛЕГОС'
+          )
+          .swiper-lazy-preloader
+
         swiper-slide
-          img.gallery__img(src='@/assets/images/gallery-sm/pic-04.jpg', alt='Окна установленные компанией ЛЕГОС')
+          img.gallery__img.swiper-lazy(
+            :data-src='require("@/assets/images/gallery-sm/pic-04.jpg")',
+            alt='Окна установленные компанией ЛЕГОС'
+          )
+          .swiper-lazy-preloader
+
         swiper-slide
-          img.gallery__img(src='@/assets/images/gallery-sm/pic-05.jpg', alt='Окна установленные компанией ЛЕГОС')
+          img.gallery__img.swiper-lazy(
+            :data-src='require("@/assets/images/gallery-sm/pic-05.jpg")',
+            alt='Окна установленные компанией ЛЕГОС'
+          )
+          .swiper-lazy-preloader
+
         .swiper-button-prev(slot='button-prev')
         .swiper-button-next(slot='button-next')
 </template>
@@ -28,6 +53,9 @@
           spaceBetween: 5,
           autoplay: true,
           grabCursor: true,
+          lazy: true,
+          preloadImages: false,
+          watchSlidesVisibility: true,
           watchOverflow: true,
           mousewheel: {
             forceToAxis: true,

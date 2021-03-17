@@ -29,7 +29,7 @@
     width 100%
 
     .balkony-offer__img
-      height 380px
+      max-width 306px
 
     .balkony-offer__p
       margin 0 0 20px
@@ -45,11 +45,13 @@
     .balkony-warm__img
       width 260px
       margin 0 0 0 10px
+      flex 260px 0 0
 
   &__row-2
     .balkony-warm__img
       width 460px
       margin 20px 0 0 auto
+      flex 460px 0 0
 
   &__row-3
     margin 40px 0 0
@@ -67,6 +69,7 @@
 
     .balkony-warm__img
       width 280px
+      flex 280px 0 0
 
   &__title
     margin 0 0 10px

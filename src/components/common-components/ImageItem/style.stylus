@@ -1,0 +1,23 @@
+.image
+  &__wrapper
+    display flex
+    justify-content center
+    align-items center
+    position relative
+
+    &.loaded
+      .image
+        &__item
+          visibility: visible
+          opacity: 1
+          border: 0
+
+        &__spinner
+          display: none
+          width: 100%
+
+  &__item
+    width 100%
+    transition all 0.4s ease-in-out
+    opacity 0
+    visibility hidden

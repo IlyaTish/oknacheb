@@ -7,8 +7,8 @@
       template(v-if='width <= 576')
         template(v-for='stage in stages.slice(0, 6)')
           .okna-stages__item
-            img.okna-stages__img(
-              :src='stage.img'
+            image-item.okna-stages__img(
+              :source='stage.img'
               :alt='stage.title'
               :key='stage.id'
             )
@@ -18,8 +18,8 @@
       template(v-else)
         .okna-stages__img-cont
           template(v-for='stage in stages')
-            img.okna-stages__img(
-              :src='stage.img'
+            image-item.okna-stages__img(
+              :source='stage.img'
               :alt='stage.title'
               :key='stage.id'
             )
@@ -34,8 +34,13 @@
   import Mixins from '@/assets/scripts/mixins'
   import Stages from '@/data/okna-page/okna-stages-data'
 
+  import ImageItem from '@/components/common-components/ImageItem/component'
+
   export default {
     mixins: [Mixins],
+    components: {
+      ImageItem
+    },
     data() {
       return {
         stages: Stages.STAGES

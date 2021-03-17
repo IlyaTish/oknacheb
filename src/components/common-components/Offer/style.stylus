@@ -12,8 +12,13 @@
   &__img-cont
     width 100%
     max-width 238px
+    min-height 264px
     flex 238px 0 0
     margin 16px 40px 0 0
+
+  &__img
+    width 100%
+    min-height 264px
 
   &__info-cont
     width 100%

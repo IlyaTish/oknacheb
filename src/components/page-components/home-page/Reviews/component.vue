@@ -19,7 +19,10 @@
 
       .reviews__col-2
         span.reviews__subtitle Более 1000 рукописных отзывов о&nbsp;нашей работе
-        img.reviews__img(src='@/assets/images/reviews/reviews.png' alt='Отзывы о компании ЛЕГОС')
+        image-item.reviews__img(
+          :source='require("@/assets/images/reviews/reviews.png")'
+          alt='Отзывы о компании ЛЕГОС'
+        )
 
     .video-reviews
       h3.video-reviews__title Отзывы о&nbsp;компании ОКНА ЛЕГОС Чебоксары&nbsp;›
@@ -31,7 +34,11 @@
           )
             .video-review(@click='showPopup({ name: "videoPopup", id: ""+ review.videoId +"" })')
               .video-review__img-cont
-                img.video-review__img(:src='review.img' :srcset='review.img_2x' :alt='review.alt')
+                img.video-review__img.swiper-lazy(
+                  :data-src='review.img_2x'
+                  :alt='review.alt'
+                )
+                .swiper-lazy-preloader
               span.video-review__tag Видео-отзыв
               h4.video-review__title {{ review.title }}
               .video-review__metabox
@@ -43,7 +50,9 @@
 <script>
   import Mixins from '@/assets/scripts/mixins'
   import Reviews    from '@/data/video-reviews-data'
+
   import CommonIcon from '@/assets/icons/common-icon'
+  import ImageItem from '@/components/common-components/ImageItem/component'
 
   export default {
     mixins: [Mixins],
@@ -51,7 +60,8 @@
       handlers: Object
     },
     components: {
-      CommonIcon
+      CommonIcon,
+      ImageItem
     },
     data() {
       return {
@@ -62,6 +72,10 @@
           slidesPerView: 1,
           slidesPerGroup: 1,
           spaceBetween: 10,
+          lazy: true,
+          preloadImages: false,
+          watchSlidesVisibility: true,
+          watchOverflow: true,
           mousewheel: {
             forceToAxis: true,
           },
@@ -73,6 +87,7 @@
             479: {
               freeMode: true,
               slidesPerView: 'auto',
+              preloadImages: false,
               spaceBetween: 30
             }
           }

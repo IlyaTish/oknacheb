@@ -8,7 +8,10 @@
       span.offer__subtitle(v-if='offer.subtitle') {{ offer.subtitle }}
       .offer__row
         .offer__img-cont
-          img.offer__img(:src='offer.img')
+          image-item.offer__img(
+            v-if='offer.img'
+            :source='offer.img'
+          )
 
         .offer__info-cont
           h2.offer__title {{ offer.title }}
@@ -27,9 +30,13 @@
 
 <script>
   import Mixins from '@/assets/scripts/mixins'
+  import ImageItem from '@/components/common-components/ImageItem/component'
 
   export default {
     mixins: [Mixins],
+    components: {
+      ImageItem
+    },
     props: {
       offer:    Object,
       handlers: Object

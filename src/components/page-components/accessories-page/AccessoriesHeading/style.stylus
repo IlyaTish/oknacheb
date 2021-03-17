@@ -1,0 +1,88 @@
+.accessories-heading
+  &__cont
+    display: flex
+    height: 246px
+    border-top: 5px solid #DEDEDE
+
+  &__txt-cont
+    width: 100%
+    height: 100%
+    padding: 20px
+    max-width: 212px
+    background: #0082C9
+    box-sizing: border-box
+
+  &__p
+    margin: 0
+    color: #FFFFFF
+    font-size: 14px
+    font-weight: 600
+
+  &__img-cont
+    width: 100%
+    overflow hidden
+
+  &__img
+    display: block
+
+  &__title
+    margin: 20px 0 10px
+    color: #000000
+    font-size: 24px
+    font-weight: 600
+
+  &__p-main
+    margin: 0 0 10px
+    color: #000000
+    font-size: 14px
+
+
+@media (max-width: 1201px)
+  .accessories-heading
+    &__txt-cont
+      width: 100%
+      max-width: 190px
+      padding: 16px
+
+@media (max-width: 993px)
+  .accessories-heading
+    &__txt-cont
+      max-width 100%
+
+    &__img-cont
+      object-fit cover
+
+    &__img
+      max-width none
+
+@media (max-width: 660px)
+  .accessories-heading
+    &__cont
+      height: auto
+      flex-direction: column
+
+    &__img-cont
+      width: 100%
+      height: auto
+      order: 1
+
+    &__img
+      width: 100%
+      height: auto
+
+    &__txt-cont
+      order: 2
+
+    &__title
+      font-size: 20px
+
+@media (max-width: 481px)
+  .accessories-heading
+    &__txt-cont
+      padding: 10px
+
+    &__p
+      font-size: 14px
+
+    &__title
+      font-size: 18px
