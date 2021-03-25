@@ -3,23 +3,20 @@
     block-main(:handlers='handlers')
 
     main.main-content
-      .main-content__col
+      block-veka
 </template>
 
 <script>
   import BlockMain from '@/components/common-components/Main/component'
+  import BlockVeka from '@/components/page-components/profil-page/Veka/component'
 
   export default {
     props: {
       handlers: Object
     },
     components: {
-      BlockMain
-    },
-    data() {
-      return {
-        okno: Offers.OKNO
-      }
+      BlockMain,
+      BlockVeka
     },
     mounted() {
       this.handlers.payments = false

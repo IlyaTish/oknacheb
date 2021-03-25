@@ -1,6 +1,197 @@
+.veka
+  width 100%
+
 .veka-row-1
   width 100%
   height 500px
   position relative
-  background url('@/assets/images/veka-pic-01.png') no-repeat
-  background-size: cover
+  background-image url('~@/assets/images/profil-page/veka-pic-01.png')
+  background-repeat no-repeat
+  background-size cover
+
+  &__p-1
+    width 230px
+    margin 0
+    top 330px
+    left 440px
+    position absolute
+    font-size 20px
+    color #FFFFFF
+
+  &__p-2
+    width 300px
+    margin 0
+    top 380px
+    position absolute
+    color #898989
+    font-size 18px
+
+.veka-table-cont
+  display flex
+  padding 20px
+  background #ECECEC
+
+  &__col-1
+    max-width 230px
+    margin 0 20px 0 0
+
+  &__col-2
+    width 100%
+
+  &__title
+    margin 0 0 10px
+    color #898989
+    font-size 22px
+    font-weight 500
+
+  &__p
+    margin 0
+    padding 20px 0
+    font-size 16px
+    border-bottom 1px solid #999999
+
+  .btn-blue
+    margin 20px 0 0
+
+.veka-table
+  width 100%
+  background #FFFFFF
+  border-spacing 0
+  border-collapse collapse
+
+  tr
+    border none
+    border-spacing 0
+
+  td
+    width 230px
+    height 30px
+    border 1px solid #000000
+    border-spacing 0
+    font-size 15px
+    text-align center
+
+  &__row-1
+    figure
+      height auto
+
+      img
+        width 100%
+
+  &__row-2
+    figure
+      width auto
+      height 100px
+      max-width 100%
+      margin 10px 0
+
+  &__row-7
+    td
+      padding 10px 0
+
+  &__row-8
+    figure
+      margin 10px 0
+
+  &__row-9
+    figure
+      margin 12px 0
+
+.veka-row-3
+  display flex
+  margin 40px 0 0
+
+  &__img
+    width 100%
+    max-width 330px
+
+.veka-energo
+  max-width 234px
+  margin 80px 0 0
+
+  &__title
+    display block
+    margin 0 0 10px
+    color #0082C9
+    font-size 15px
+    font-weight 600
+
+.veka-list
+  max-width 398px
+  margin 0 0 0 20px
+  padding 0
+
+  &__item
+    display flex
+    margin 0 0 20px
+
+  &__num
+    width 20px
+    height 20px
+    flex 20px 0 0
+    margin 0 10px 0 0
+    color #FFFFFF
+    text-align center
+    line-height 20px
+    border-radius 100%
+    background #0082C9
+
+  &__txt
+    font-size 16px
+
+.veka-grid
+  margin 40px 0 0
+  padding 5px
+  display grid
+  grid-gap 5px
+  grid-template-columns 1fr 1fr 1fr
+  border 1px solid #898989
+
+  &__item
+    padding 10px
+    font-size 13px
+    border 1px solid #000000
+
+  &__img
+    width 80px
+    height 80px
+    float left
+
+  &__title
+    font-size 13px
+    font-weight 600
+
+  &__p
+    margin 10px 0 0
+    font-size 13px
+    line-height 16px
+
+.veka-row-4
+  margin 40px 0
+  position relative
+
+  &__img
+    max-width 454px
+
+  &__logo.image__wrapper
+    top 0
+    right 0
+    position absolute
+
+  &__p-1
+    width 190px
+    margin 0
+    top 19 0px
+    left 240px
+    position absolute
+    color #FFFFFF
+    font-size 17px
+    font-weight normal
+
+  &__p-2
+    width 430px
+    right 0
+    bottom 70px
+    position absolute
+    color #898989
+    font-size 22px
