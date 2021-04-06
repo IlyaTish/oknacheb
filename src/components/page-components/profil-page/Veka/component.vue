@@ -13,60 +13,61 @@
 
         .veka-table-cont__col-2
           h2.veka-table-cont__title Продукт экстра-класса:
-          table.veka-table
-            tr.veka-table__row-1
-              td
-              td
-                image-item(:source='require("@/assets/images/profil-page/euroline.png")')
-              td
-                image-item(:source='require("@/assets/images/profil-page/softline.png")')
+          .overflow-x-auto
+            table.veka-table
+              tr.veka-table__row-1
+                td
+                td
+                  image-item(:source='require("@/assets/images/profil-page/euroline.png")')
+                td
+                  image-item(:source='require("@/assets/images/profil-page/softline.png")')
 
-            tr.veka-table__row-2
-              td
-                image-item(:source='require("@/assets/images/profil-page/veka-logo.png")')
-              td
-                image-item(:source='require("@/assets/images/profil-page/veka-profil-01.png")')
-              td
-                image-item(:source='require("@/assets/images/profil-page/veka-profil-02.png")')
+              tr.veka-table__row-2
+                td
+                  image-item(:source='require("@/assets/images/profil-page/veka-logo.png")')
+                td
+                  image-item(:source='require("@/assets/images/profil-page/veka-profil-01.png")')
+                td
+                  image-item(:source='require("@/assets/images/profil-page/veka-profil-02.png")')
 
-            tr.veka-table__row-3
-              td Количество камер
-              td 3
-              td 5
+              tr.veka-table__row-3
+                td Количество камер
+                td 3
+                td 5
 
-            tr.veka-table__row-4
-              td Толщина
-              td 58мм
-              td 70мм
+              tr.veka-table__row-4
+                td Толщина
+                td 58мм
+                td 70мм
 
-            tr.veka-table__row-5
-              td Теплопроводимость
-              td 0,64 м2С/Вт
-              td 0,78 м2С/Вт
+              tr.veka-table__row-5
+                td Теплопроводимость
+                td 0,64 м2С/Вт
+                td 0,78 м2С/Вт
 
-            tr.veka-table__row-6
-              td Армирование
-              td Квадратное (усиленное)
-              td Квадратное (усиленное)
+              tr.veka-table__row-6
+                td Армирование
+                td Квадратное (усиленное)
+                td Квадратное (усиленное)
 
-            tr.veka-table__row-7
-              td Область применения
-              td Теплые или хорошо отапливаемые квартиры
-              td Плохо отапливаемые квартиры и загородное строительство
+              tr.veka-table__row-7
+                td Область применения
+                td Теплые или хорошо отапливаемые квартиры
+                td Плохо отапливаемые квартиры и загородное строительство
 
-            tr.veka-table__row-8
-              td Фурнитура
-              td
-                image-item(:source='require("@/assets/images/profil-page/roto.png")')
-              td
-                image-item(:source='require("@/assets/images/profil-page/roto.png")')
+              tr.veka-table__row-8
+                td Фурнитура
+                td
+                  image-item(:source='require("@/assets/images/profil-page/roto.png")')
+                td
+                  image-item(:source='require("@/assets/images/profil-page/roto.png")')
 
-            tr.veka-table__row-9
-              td Класс энергоэффективности
-              td
-                image-item(:source='require("@/assets/images/profil-page/a.png")')
-              td
-                image-item(:source='require("@/assets/images/profil-page/a+.png")')
+              tr.veka-table__row-9
+                td Класс энергоэффективности
+                td
+                  image-item(:source='require("@/assets/images/profil-page/a.png")')
+                td
+                  image-item(:source='require("@/assets/images/profil-page/a+.png")')
 
     .veka-row-3
       .veka-energo
@@ -146,3 +147,4 @@
 </script>
 
 <style src='./style.stylus' lang='stylus' scoped></style>
+<style src='./responsive.stylus' lang='stylus' scoped></style>

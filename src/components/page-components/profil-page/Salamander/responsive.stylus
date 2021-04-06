@@ -1,0 +1,47 @@
+@media (max-width 993px)
+  .salamander
+    &__p
+      padding 0
+
+  .salamander-row-1
+    background unset
+
+  .salamander-row-2
+    &__col-1
+      max-width 200px
+
+
+@media (max-width 769px)
+  .salamander
+    padding 0 0 40px
+
+  .salamander-row-2
+    &__col-1
+      display none
+
+    &__col-2
+      margin 0
+
+
+@media (max-width 590px)
+  .salamander
+    &__p
+      font-size 20px
+      line-height 24px
+
+  .salamander-row-2
+    margin 20px 0 0
+
+    &__p-2,
+    &__p-3,
+    &__p-4
+      margin 20px 0
+      color #727271
+
+    &__p-5
+      margin 20px 0 0
+      font-size 20px
+
+    &__cont
+      .salamander-row-2__img.image__wrapper
+        display none

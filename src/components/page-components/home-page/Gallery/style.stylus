@@ -35,13 +35,13 @@
     max-width 180px
 
 
-@media (max-width 991px)
+@media (max-width 993px)
   .gallery
     margin 0
     padding 10px 0 0
     background #F5F5F5
 
-@media (max-width 479px)
+@media (max-width 480px)
   .gallery
     &__title
       width 100%

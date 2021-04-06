@@ -10,20 +10,15 @@
           :options='swiperOptions'
         )
           swiper-slide
-            img.main__img.swiper-lazy(:data-src='require("@/assets/images/main/pic-01@2x.jpg")')
-            .swiper-lazy-preloader
+            img.main__img(src='@/assets/images/main/pic-01@2x.jpg')
           swiper-slide
-            img.main__img.swiper-lazy(:data-src='require("@/assets/images/main/pic-02@2x.jpg")')
-            .swiper-lazy-preloader
+            img.main__img(src='@/assets/images/main/pic-02@2x.jpg')
           swiper-slide
-            img.main__img.swiper-lazy(:data-src='require("@/assets/images/main/pic-03@2x.jpg")')
-            .swiper-lazy-preloader
+            img.main__img(src='@/assets/images/main/pic-03@2x.jpg')
           swiper-slide
-            img.main__img.swiper-lazy(:data-src='require("@/assets/images/main/pic-04@2x.jpg")')
-            .swiper-lazy-preloader
+            img.main__img(src='@/assets/images/main/pic-04@2x.jpg')
           swiper-slide
-            img.main__img.swiper-lazy(:data-src='require("@/assets/images/main/img-05.jpg")')
-            .swiper-lazy-preloader
+            img.main__img(src='@/assets/images/main/img-05.jpg')
 
       .main__col-2
         .main-phone
@@ -53,8 +48,6 @@
         swiperOptions: {
           direction: 'horizontal',
           loop: true,
-          lazy: true,
-          preloadImages: false,
           allowTouchMove: false,
           autoplay: {
             delay: 4000

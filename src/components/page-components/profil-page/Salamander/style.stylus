@@ -1,0 +1,53 @@
+.salamander
+  padding 0 0 20px
+
+  &__p
+    margin 0
+    padding 220px 0 0 340px
+    color #009846
+    font-size 28px
+    line-height 32px
+
+.salamander-row-1
+  background-position 100% 0
+  background-repeat no-repeat
+  background-image url('~@/assets/images/profil-page/salamander-pic-01.jpeg')
+
+.salamander-row-2
+  display flex
+  align-items flex-start
+  margin 40px 0 0
+
+  &__cont
+    display flex
+    margin 20px 0 0
+
+    figure
+      margin 10px 0 10px 30px
+
+  &__col-1
+    width 100%
+    max-width 274px
+    flex 274px 0 0
+
+  &__col-2
+    margin 10px 0 10px 30px
+
+  &__img
+    display block
+
+  &__p-1
+    margin 10px 0 0
+
+  &__p-2,
+  &__p-3,
+  &__p-4
+    margin 20px 90px 0 20px
+    color #727271
+
+  &__p-5
+    max-width 348px
+    margin 30px 0 0 20px
+    color #009846
+    font-size 22px
+    line-height 24px

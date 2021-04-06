@@ -1,0 +1,141 @@
+@media (max-width 993px)
+  .veka-row-1
+    height auto
+    background unset
+
+    &__p-1,
+    &__p-2
+      width 100%
+      margin 10px 0
+      color: #000000
+      position unset
+
+    &__p-2
+      margin 10px 0
+      position unset
+
+  .veka-table-cont
+    &__col-1
+      max-width 180px
+
+  .veka-row-4
+    &__p-2
+      width 240px
+      font-size 18px
+
+
+@media (max-width 769px)
+  .veka-table-cont
+    flex-wrap wrap
+    overflow hidden
+
+    &__col-1
+      width 100%
+      max-width 100%
+      margin 0 0 40px
+      display grid
+      grid-gap 20px
+      grid-template-areas 'img img p p' 'btn btn btn btn'
+
+      .image__wrapper
+        max-width intrinsic
+        max-width -moz-max-content
+        max-width -webkit-max-content
+        justify-content flex-start
+        grid-area img
+
+      .btn-blue
+        margin 0
+        grid-area btn
+
+    &__p
+      border none
+      grid-area p
+
+    &__col-2
+      width 100%
+      max-width 100%
+
+  .overflow-x-auto
+    width 100%
+    display flex
+    flex-direction column
+    overflow-x scroll
+    overflow-y hidden
+
+  .veka-table
+    width 674px
+    overflow-x scroll
+    overflow-y hidden
+
+    td
+      padding 4px
+
+  .veka-row-3
+    .veka-energo
+      flex 260px 0 0
+
+    &__img.image__wrapper
+      display none
+
+  .veka-list
+    margin 0 0 0 10px
+
+  .veka-row-4
+    margin 30px 0 20px
+    display flex
+    flex-direction column
+
+    &__img.image__wrapper
+      display none
+
+    &__p-1,
+    &__p-2
+      width 100%
+      color #000000
+      font-size 18px
+      position unset
+      order 2
+
+    &__p-1
+      color #000000
+
+    &__logo.image__wrapper
+      margin 0 0 20px
+      position unset
+
+
+@media (max-width 690px)
+  .veka-grid
+    margin 20px 0 0
+    grid-template-columns 1fr 1fr
+
+
+@media (max-width 590px)
+  .veka-table
+    width 540px
+
+  .veka-row-3
+    .veka-energo
+      display none
+
+  .veka-list
+    max-width 100%
+    margin 0
+
+
+@media (max-width 480px)
+  .veka-table-cont
+    padding 16px
+
+    &__col-1
+      grid-template-areas 'img img' 'p p' 'btn btn'
+
+    &__p
+      padding 0
+
+  .veka-table 
+    width 630px
+
+  .veka-grid
+    grid-template-columns 1fr
