@@ -22,6 +22,7 @@
 
   &__img
     width 100%
+    min-height 127px
 
   &__p
     margin 10px 0 0

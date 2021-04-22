@@ -74,7 +74,7 @@
 
   .checkout-form
     max-width 100%
-    padding 10px 10px 0
+    padding 10px
 
     &__col-2
       width 100%
@@ -89,7 +89,7 @@
       display none
 
     .checkout-form
-      padding 12px 16px 0
+      padding 12px 16px
 
     &__img
       width 154px
@@ -98,7 +98,7 @@
     .textarea
       height 100px
 
-@media (max-width 481px)
+@media (max-width 480px)
   .checkout-form
     padding 12px
 

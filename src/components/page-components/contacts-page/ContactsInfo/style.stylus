@@ -36,11 +36,8 @@
     max-width 356px
     height 180px
 
-  .ymaps
-    width 100% !important
-
   .ymap-container
-    width 100%
+    width 100% !important
     height 100%
 
     div[id]

@@ -11,14 +11,17 @@
             :offer='okno'
             :handlers='handlers'
           )
-          block-offer-form
+          block-offer-form(:offer='okno')
+
         block-gallery-sm
+
         section.offer-wrapper
           block-offer(
             :offer='balkon'
             :handlers='handlers'
           )
-          block-offer-form
+          block-offer-form(:offer='balkon')
+
         block-work
 
       block-sidebar(:handlers='handlers')
@@ -41,6 +44,7 @@
       )
 </template>
 
+
 <script>
   import Mixins from '@/assets/scripts/mixins'
   import Offers from '@/data/offers-data'
@@ -62,11 +66,14 @@
   import CalculatorPopup from '@/components/popup-components/CalculatorPopup/component'
   import VideoPopup      from '@/components/popup-components/VideoPopup/component'
 
+
   export default {
     mixins: [Mixins],
+
     props: {
       handlers: Object
     },
+
     components: {
       BlockMain,
       BlockBanner,
@@ -84,12 +91,14 @@
       CalculatorPopup,
       VideoPopup
     },
+
     data() {
       return {
         okno: Offers.OKNO,
         balkon: Offers.BALKON
       }
     },
+
     mounted() {
       this.handlers.payments = true
       this.handlers.alignLeft = false

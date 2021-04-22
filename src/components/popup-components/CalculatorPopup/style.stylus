@@ -117,3 +117,65 @@
 
   &__send
     margin 40px 0 0
+
+.calculator-popup-swiper
+  display flex
+  align-items center
+  justify-content center
+
+
+@media (max-width 660px)
+  .calculator-popup
+    &__cont
+      flex-direction column
+
+    &__col-1
+      margin 0 0 20px
+
+    &__send
+      margin 10px 0 0
+
+
+@media (max-width 590px)
+  .calculator-popup
+    &__cont
+      padding 0 20px
+
+  .popup.calculator-popup
+    .popup__title
+      &--last
+        margin 0 0 10px
+
+    .swiper-container
+      margin 0 20px
+
+      .swiper-button-next,
+      .swiper-button-prev
+        width 30px
+        height 30px
+        border-radius 100%
+        background #FFFFFF
+        box-shadow 0 2px 4px #0000005e
+
+        &:after
+          font-size 16px
+
+
+@media (max-width 480px)
+  .calculator-popup
+    &__conf-img
+      height 120px
+
+    &__img-cont
+      height 180px
+
+  .popup.calculator-popup
+    .input-wrapper
+      flex-direction column
+
+    .input-title
+      margin 0
+
+    .input
+      padding 8px 6px
+

@@ -15,7 +15,7 @@
             :offer='balkon'
             :handlers='handlers'
           )
-          block-offer-form
+          block-offer-form(:offer='balkon')
 </template>
 
 <script>

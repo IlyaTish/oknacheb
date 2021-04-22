@@ -6,10 +6,15 @@
 
         .checkout-form__cont
           .checkout-form__col-1
-            image-item.checkout-form__img(:source='require("@/assets/images/checkout/lion.png")')
+            .checkout-form__img
+              image-item(:source='require("@/assets/images/checkout/lion.png")')
 
           .checkout-form__col-2
-            form.checkout-form__form
+            form.checkout-form__form(@submit='submit')
+              input(type='hidden' name='project_name' value='oknacheb.ru')
+              input(type='hidden' name='admin_email' value='ilya.tishencko676@yandex.ru')
+              input(type='hidden' name='form_subject' value='Заявка с главной страницы (форма обратной связи)')
+
               .input-cont
                 span.input-title Ваше имя:
                 input.input(
@@ -32,9 +37,12 @@
 </template>
 
 <script>
+  import Mixins from '@/assets/scripts/mixins'
   import ImageItem from '@/components/common-components/ImageItem/component'
 
   export default {
+    mixins: [Mixins],
+
     components: {
       ImageItem
     }
@@ -42,3 +50,11 @@
 </script>
 
 <style src='./style.stylus' lang='stylus' scoped></style>
+
+<style lang='stylus'>
+.checkout-form
+  .form-success
+    width calc(100% + 2px)
+    left -1px
+    background linear-gradient(0deg, #ECECEC, #F9F9F9 80%, #F7F7F7)
+</style>

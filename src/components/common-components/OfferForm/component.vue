@@ -8,39 +8,77 @@
       )
 
     .offer-form__cont
-      form.offer-form__form
+      form.offer-form__form(@submit='submit')
+        input(type='hidden' name='project_name' value='oknacheb.ru')
+        input(type='hidden' name='admin_email'  value='ilya.tishencko676@yandex.ru')
+        input(type='hidden' name='form_subject' :value='this.formSubjectValue')
+
         h2.offer-form__title Оставить заявку <br>по&nbsp;акции
-        input.input(type='text' name='Имя' placeholder='имя' required)
-        input.input(type='text' name='Телефон' placeholder='Телефон' required)
-        input.input(type='text' name='Адрес' placeholder='адрес (не обязательно)' required)
+        input.input(type='text' name='Имя' placeholder='Имя' required)
+        imask-input.calculator-form__input.input(
+          v-imask='mask'
+          name='Телефон'
+          placeholder='Телефон'
+          required
+        )
+        input.input(type='text' name='Адрес' placeholder='Aдрес (не обязательно)')
         button.btn Заказать сейчас
       p.offer-form__p Оставьте заявку, и&nbsp;наш специалист рассчитает стоимость заказа с&nbsp;учетом всех ваших пожеланий
 </template>
 
+
 <script>
-import FlipCountdown from 'vue2-flip-countdown'
+import Mixins from '@/assets/scripts/mixins'
+
 import moment from 'moment'
+import FlipCountdown from 'vue2-flip-countdown'
+
+import { IMaskComponent, IMaskDirective } from 'vue-imask'
+
 
 const fmt = 'YYYY-MM-DD HH:mm:ss'
 
 export default {
-  components: {
-    FlipCountdown
+  mixins: [Mixins],
+
+  props: {
+    offer: Object
   },
+
+  components: {
+    FlipCountdown,
+    'imask-input': IMaskComponent
+  },
+
   data() {
     return {
       deadlinets: moment()
         .endOf('day')
-        .valueOf()
+        .valueOf(),
+
+      mask: {
+        mask: '+{7} (000) 000-00-00',
+        lazy: false
+      }
     }
   },
+
   computed: {
-    deadline: function () {
-      return moment(this.deadlinets).format(fmt);
+    deadline() {
+      return moment(this.deadlinets).format(fmt)
+    },
+
+    formSubjectValue() {
+      return `Заявка со страницы "${this.$route.name}" (${this.offer.title})`
     }
+  },
+
+  directives: {
+    imask: IMaskDirective
   }
 }
 </script>
+
 
 <style src='./style.stylus' lang='stylus' scoped></style>
 

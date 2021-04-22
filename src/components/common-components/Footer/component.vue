@@ -47,12 +47,9 @@
 
   export default {
     mixins: [Mixins],
+
     components: {
       CommonIcon
-    },
-    data() {
-      return {
-      }
     }
   }
 </script>

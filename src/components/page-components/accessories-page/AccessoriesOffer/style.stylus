@@ -23,6 +23,7 @@
 
   &__img
     max-width 265px
+    min-height 142px
     margin 0 20px 10px 0
     float left
 
@@ -32,4 +33,5 @@
     padding: 10px
 
     &__img
-      max-width 100%
+      margin 0 0 10px
+      float unset

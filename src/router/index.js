@@ -6,41 +6,41 @@ import BalkonyPage     from '@/pages/BalkonyPage/component'
 import ProfilPage      from '@/pages/ProfilPage/component'
 import AccessoriesPage from '@/pages/AccessoriesPage/component'
 import ContactsPage    from '@/pages/ContactsPage/component'
-import '@/assets/libs/libs.min.css'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
+  linkActiveClass: 'active',
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Главная',
       component: HomePage
     },
     {
       path: '/okna',
-      name: 'okna',
+      name: 'Окна',
       component: OknaPage
     },
     {
       path: '/balkony',
-      name: 'balkony',
+      name: 'Балконы',
       component: BalkonyPage
     },
     {
       path: '/profil',
-      name: 'profil',
+      name: 'Выбираем профиль',
       component: ProfilPage
     },
     {
       path: '/contacts',
-      name: 'contacts',
+      name: 'Контакты',
       component: ContactsPage
     },
     {
       path: '/accessories',
-      name: 'accessories',
+      name: 'Аксессуары',
       component: AccessoriesPage
     }
   ]

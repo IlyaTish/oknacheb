@@ -14,7 +14,7 @@
             :offer='okno'
             :handlers='handlers'
           )
-          block-offer-form
+          block-offer-form(:offer='okno')
 </template>
 
 <script>

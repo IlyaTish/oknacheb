@@ -1,18 +1,29 @@
 export default {
   state: {
-    popups: {
-      commonPopup: false,
-      calculatorPopup: false,
-      videoPopup: false,
-      writePopup: false,
+    popup: {
+      types: {
+        commonPopup:     false,
+        calculatorPopup: false,
+        videoPopup:      false,
+        writePopup:      false
+      },
       data: {}
     }
   },
-  mutations: {},
+
+  mutations: {
+    closePopup(state) {
+      for (let key in state.popup.types) {
+        state.popup.types[key] = false
+      }
+    }
+  },
+
   actions: {},
+
   getters: {
     popups(state) {
-      return state.popups
+      return state.popup.types
     }
   }
 }

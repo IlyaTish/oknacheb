@@ -86,7 +86,10 @@ figure
 
 
 
-/* Inputs */
+/* Inputs, form */
+
+form
+  position relative
 
 .input
   width 100%
@@ -127,6 +130,46 @@ figure
   color #000000
   font-size 13px
   font-weight 600
+
+.form-success
+  width 100%
+  height 100%
+  display flex
+  align-items center
+  flex-direction column
+  justify-content center
+  top 0
+  left 0
+  position absolute
+  background #FFFFFF
+
+  &__title
+    width 100%
+    display block
+    margin 0 0 20px
+    color #000000
+    font-size 18px
+    text-align center
+    text-transform uppercase
+
+  &__txt
+    margin 0
+    color #828282
+    text-align center
+
+.form-success.show
+  animation fadeIn .2s ease
+
+.form-success.hide
+  transition .2s
+  opacity 0
+
+@keyframes fadeIn
+  0%
+    opacity 0
+
+  100%
+    opacity 1
 
 
 
@@ -205,7 +248,7 @@ figure
 
   &__cont
     width 100%
-    max-width 440px
+    max-width 540px
     margin auto
     padding 10px
     position relative
@@ -215,14 +258,22 @@ figure
     transition ease .3s
     z-index 4
 
+  &__img-cont
+    min-height 347px
+
   &__title
     width 100%
     display inline-block
-    margin 20px 0
+    margin 0 0 20px
     color #000000
     font-size 18px
     text-align center
     text-transform uppercase
+
+  &__txt
+    margin 0
+    color #828282
+    text-align center
 
   .input-wrapper
     max-width 250px
@@ -256,9 +307,14 @@ figure
     &:hover
       opacity .6
 
+.popup.common-popup
+  .form-success
+    min-height 150px
+    background #EFEFEF
+
 .popup-form
   margin 10px 0 0
-  padding 0 20px 20px
+  padding 20px
   background #EFEFEF
   box-sizing border-box
 

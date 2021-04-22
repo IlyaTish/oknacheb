@@ -1,6 +1,8 @@
 .guarantee
-  display flex
   margin 30px 0 0
+
+  &__cont
+    display flex
 
   &__col-1,
   &__col-2
@@ -11,7 +13,7 @@
   &__col-1
     padding 0 0 0 15px
     margin 0 10px 0 0
-    background url('../../../../assets/images/guarantee/bg.svg') no-repeat
+    background url('~@/assets/images/guarantee/bg.svg') no-repeat
     background-position 50%
     background-size 100%
 
@@ -43,6 +45,7 @@
 
     .guarantee__img-cont
       display flex
+      margin 0 20px 0 0
 
     .guarantee__img
       width 70px

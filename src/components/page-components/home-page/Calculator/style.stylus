@@ -49,7 +49,7 @@
     display flex
 
   &__img
-    height 65px
+    height 70px
     border-radius 3px
     border 4px solid transparent
     transition .2s

@@ -20,6 +20,7 @@
           block-brusbox
 </template>
 
+
 <script>
   import BlockMain from '@/components/common-components/Main/component'
   import BlockVeka from '@/components/page-components/profil-page/Veka/component'
@@ -30,22 +31,26 @@
     props: {
       handlers: Object
     },
+
     data() {
       return {
         switchType: 'veka'
       }
     },
+
     components: {
       BlockMain,
       BlockVeka,
       BlockSalamander,
       BlockBrusbox
     },
+
     mounted() {
       this.handlers.payments = false
     }
   }
 </script>
+
 
 <style lang='stylus' scoped>
   .profil-page-wrapper

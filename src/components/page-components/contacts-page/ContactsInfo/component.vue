@@ -26,23 +26,6 @@
       )
 </template>
 
-<style src='./style.stylus' lang='stylus' scoped></style>
-
-<style lang='stylus'>
-  .contacts-info
-    .ymaps-2-1-78-copyright,
-    .ymaps-2-1-78-gototech
-      display none !important
-    
-    .ymaps-2-1-78-map-copyrights-promo
-      right: 10px
-      left: unset !important
-
-    .ymap-container
-      div[id]
-        width 100% !important
-        height 100% !important
-</style>
 
 <script>
   import { yandexMap, ymapMarker } from 'vue-yandex-maps'
@@ -70,3 +53,28 @@
     }
   }
 </script>
+
+
+<style src='./style.stylus' lang='stylus' scoped></style>
+
+<style lang='stylus'>
+  .contacts-info
+    .ymaps-2-1-78-copyright,
+    .ymaps-2-1-78-gototech
+      display none !important
+    
+    .ymaps-2-1-78-map-copyrights-promo
+      right: 10px
+      left: unset !important
+
+    .ymap-container
+      div[id]
+        width 100% !important
+        height 100% !important
+
+    .ymaps-2-1-78-map
+      width 100% !important
+
+    .ymaps-2-1-78-inner-panes
+      left 0
+</style>

@@ -101,7 +101,7 @@
       margin 4px 0 0
       content ''
       display block
-      background lighten(#0082C9, 20%)
+      background #0082C9
       opacity 0
       transition .2s
 
@@ -109,7 +109,11 @@
       color lighten(#0082C9, 20%)
 
       &:after
-        opacity 1
+        background lighten(#0082C9, 20%)
+
+  &__link.router-link-exact-active
+    &:after
+      opacity 1
 
 .burger-btn-wrapper
   margin 0 0 0 20px
@@ -201,6 +205,10 @@
       width 100%
       padding 10px 20px
       text-align left
+
+    &__link.router-link-exact-active
+      &:after
+        display none
 
 
 @media (max-width 993px)

@@ -37,9 +37,14 @@
 
 @media (max-width 993px)
   .gallery
-    margin 0
     padding 10px 0 0
     background #F5F5F5
+
+
+@media (max-width 680px)
+  .gallery
+    margin 0
+
 
 @media (max-width 480px)
   .gallery

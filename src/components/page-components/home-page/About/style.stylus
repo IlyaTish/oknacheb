@@ -24,6 +24,9 @@
     margin 0 0 0 40px
 
 
+  @media (max-width 991px)
+    margin 0 0 30px
+
   @media (max-width 900px)
     &__img
       max-width 300px

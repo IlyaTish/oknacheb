@@ -41,14 +41,15 @@
       CommonPopup,
       WritePopup
     },
+
     data() {
       return {
         handlers: {
-          payments: '',
+          payments:  '',
           alignLeft: '',
           sidebar: {
             offers: '',
-            video: ''
+            video:  ''
           },
           popups: this.$store.getters.popups,
         }
